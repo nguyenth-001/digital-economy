@@ -1,0 +1,145 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "field:title",
+ "creation": "2025-03-18 15:28:31.285185",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "title",
+  "column_break_kltp",
+  "thoi_gian",
+  "section_break_zrqx",
+  "html_qnze",
+  "column_break_diyg",
+  "du_lieu_nam",
+  "section_break_lhvf",
+  "quy",
+  "chi_so_grdp_uoc_tinh",
+  "column_break_ijds",
+  "nam",
+  "bien_dau_vao",
+  "section_break_tajr",
+  "he_so_chuyen_doi",
+  "bang_va_ict",
+  "tong_va"
+ ],
+ "fields": [
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Title",
+   "unique": 1
+  },
+  {
+   "fieldname": "column_break_kltp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "thoi_gian",
+   "fieldtype": "Date",
+   "hidden": 1,
+   "label": "Th\u1eddi gian"
+  },
+  {
+   "fieldname": "section_break_zrqx",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "html_qnze",
+   "fieldtype": "HTML",
+   "options": "<p>Trong tr\u01b0\u1eddng h\u1ee3p d\u1eef li\u1ec7u nh\u1eadp l\u00e0 d\u1eef li\u1ec7u c\u1ee7a n\u0103m, ch\u1ecdn v\u00e0o \u00f4 <b>D\u1eef li\u1ec7u n\u0103m</b></p>\n"
+  },
+  {
+   "fieldname": "column_break_diyg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "du_lieu_nam",
+   "fieldtype": "Check",
+   "label": "D\u1eef li\u1ec7u n\u0103m"
+  },
+  {
+   "fieldname": "section_break_lhvf",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "eval: doc.du_lieu_nam",
+   "fieldname": "quy",
+   "fieldtype": "Select",
+   "label": "Qu\u00fd",
+   "options": "\nQ1\nQ2\nQ3\nQ4"
+  },
+  {
+   "fieldname": "chi_so_grdp_uoc_tinh",
+   "fieldtype": "Link",
+   "label": "Ch\u00ed s\u1ed1 GRDP \u01b0\u1edbc t\u00ednh",
+   "options": "Estimated GRDP"
+  },
+  {
+   "fieldname": "column_break_ijds",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "bien_dau_vao",
+   "fieldtype": "Link",
+   "label": "H\u1ec7 s\u1ed1 \u0111\u1ea7u v\u00e0o",
+   "options": "Conversion Factor"
+  },
+  {
+   "fieldname": "section_break_tajr",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "he_so_chuyen_doi",
+   "fieldtype": "Float",
+   "label": "H\u1ec7 s\u1ed1 chuy\u1ec3n \u0111\u1ed5i",
+   "precision": "9"
+  },
+  {
+   "fieldname": "bang_va_ict",
+   "fieldtype": "Table",
+   "options": "VA ICT Table"
+  },
+  {
+   "fieldname": "tong_va",
+   "fieldtype": "Float",
+   "label": "T\u1ed5ng VA",
+   "precision": "2"
+  },
+  {
+   "fieldname": "nam",
+   "fieldtype": "Select",
+   "label": "N\u0103m",
+   "options": "\n2022\n2023\n2024\n2025\n2026"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-03-19 11:07:40.035263",
+ "modified_by": "Administrator",
+ "module": "Digital Economy",
+ "name": "VA ICT",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

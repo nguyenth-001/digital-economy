@@ -1,0 +1,95 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:D\u1eef li\u1ec7u c\u1ee7a C\u1ee5c thu\u1ebf {quy}/{nam}",
+ "creation": "2025-03-17 15:36:15.973839",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "quy",
+  "thoi_gian",
+  "column_break_btxf",
+  "nam",
+  "hoan_thanh",
+  "ch\u1ec9_s\u1ed1_section",
+  "tax_input_index_table",
+  "ch\u1ec9_s\u1ed1_th\u00e0nh_ph\u1ea7n_section",
+  "tax_input_sub_index_table"
+ ],
+ "fields": [
+  {
+   "fieldname": "quy",
+   "fieldtype": "Select",
+   "label": "Qu\u00fd",
+   "options": "\nQ1\nQ2\nQ3\nQ4"
+  },
+  {
+   "fieldname": "column_break_btxf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "nam",
+   "fieldtype": "Select",
+   "label": "N\u0103m",
+   "options": "\n2022\n2023\n2024\n2025\n2026"
+  },
+  {
+   "fieldname": "thoi_gian",
+   "fieldtype": "Date",
+   "hidden": 1,
+   "label": "Th\u1eddi gian"
+  },
+  {
+   "fieldname": "hoan_thanh",
+   "fieldtype": "Percent",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Nh\u1eadp li\u1ec7u"
+  },
+  {
+   "fieldname": "ch\u1ec9_s\u1ed1_section",
+   "fieldtype": "Section Break",
+   "label": "Ch\u1ec9 s\u1ed1"
+  },
+  {
+   "fieldname": "tax_input_index_table",
+   "fieldtype": "Table",
+   "options": "Index Input Table"
+  },
+  {
+   "fieldname": "ch\u1ec9_s\u1ed1_th\u00e0nh_ph\u1ea7n_section",
+   "fieldtype": "Section Break",
+   "label": "Ch\u1ec9 s\u1ed1 th\u00e0nh ph\u1ea7n"
+  },
+  {
+   "fieldname": "tax_input_sub_index_table",
+   "fieldtype": "Table",
+   "options": "Sub-Index Input Table"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-03-17 15:54:17.595478",
+ "modified_by": "Administrator",
+ "module": "Digital Economy",
+ "name": "Tax Department Input",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

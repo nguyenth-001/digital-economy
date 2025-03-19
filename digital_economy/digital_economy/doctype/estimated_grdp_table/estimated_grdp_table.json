@@ -1,0 +1,49 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-03-18 14:02:20.091104",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "nganh_kinh_te",
+  "grdp_uoc_tinh",
+  "loai_kts"
+ ],
+ "fields": [
+  {
+   "fieldname": "nganh_kinh_te",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Ng\u00e0nh kinh t\u1ebf",
+   "options": "Industry Name"
+  },
+  {
+   "bold": 1,
+   "fieldname": "grdp_uoc_tinh",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "GRDP \u01b0\u1edbc t\u00ednh",
+   "precision": "2"
+  },
+  {
+   "fetch_from": "nganh_kinh_te.loai_kts",
+   "fieldname": "loai_kts",
+   "fieldtype": "Select",
+   "label": "Lo\u1ea1i KTS",
+   "options": "\nKTS l\u00f5i\nKTS ng\u00e0nh kinh t\u1ebf ngo\u00e0i ICT"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-03-18 14:03:59.389679",
+ "modified_by": "Administrator",
+ "module": "Digital Economy",
+ "name": "Estimated GRDP Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

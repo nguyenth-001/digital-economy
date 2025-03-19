@@ -1,0 +1,286 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:title",
+ "creation": "2025-03-17 13:34:29.136119",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "rut_gon",
+  "quy",
+  "nam",
+  "column_break_pzyg",
+  "thoi_gian",
+  "title",
+  "tab_2_tab",
+  "bang_nhan_thuc_so_va_the_che_so",
+  "section_break_mzzj",
+  "tong_diem_nhan_thuc_so_va_the_che_so",
+  "column_break_iyjk",
+  "tong_diem_co_so_bang_nhan_thuc_so_va_the_che_so",
+  "tab_3_tab",
+  "bang_ha_tang_va_an_ninh_mang",
+  "section_break_bcvk",
+  "tong_diem_ha_tang_va_an_ninh_mang",
+  "column_break_dbaf",
+  "tong_diem_co_so_ha_tang_va_an_ninh_mang",
+  "tab_4_tab",
+  "bang_nhan_luc_so",
+  "section_break_rwoz",
+  "tong_diem_nhan_luc_so",
+  "column_break_vuue",
+  "tong_diem_co_so_nhan_luc_so",
+  "tab_5_tab",
+  "bang_hoat_dong_kinh_te_so",
+  "section_break_oxvz",
+  "tong_diem_hoat_dong_kinh_te_so",
+  "column_break_rblw",
+  "tong_diem_co_so_hoat_dong_kinh_te_so",
+  "tab_6_tab",
+  "bang_kts_logistics",
+  "section_break_omvm",
+  "tong_diem_kts_logistics",
+  "column_break_vzmp",
+  "tong_diem_co_so_kts_logistics",
+  "tab_7_tab",
+  "bang_doanh_thu_nganh_kts",
+  "tab_8_tab",
+  "bang_kts_nganh_mui_nhon"
+ ],
+ "fields": [
+  {
+   "depends_on": "eval: doc.rut_gon",
+   "fieldname": "quy",
+   "fieldtype": "Select",
+   "label": "Qu\u00fd",
+   "mandatory_depends_on": "eval: doc.rut_gon",
+   "options": "\nQ1\nQ2\nQ3\nQ4"
+  },
+  {
+   "fieldname": "nam",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "N\u0103m",
+   "options": "\n2022\n2023\n2024\n2025\n2026",
+   "reqd": 1
+  },
+  {
+   "fieldname": "thoi_gian",
+   "fieldtype": "Date",
+   "hidden": 1,
+   "label": "Th\u1eddi gian"
+  },
+  {
+   "fieldname": "column_break_pzyg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tab_2_tab",
+   "fieldtype": "Tab Break",
+   "label": "Nh\u1eadn th\u1ee9c s\u1ed1 v\u00e0 th\u1ec3 ch\u1ebf s\u1ed1"
+  },
+  {
+   "fieldname": "bang_nhan_thuc_so_va_the_che_so",
+   "fieldtype": "Table",
+   "options": "Digital Economy Index Set Table"
+  },
+  {
+   "fieldname": "section_break_mzzj",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "tong_diem_nhan_thuc_so_va_the_che_so",
+   "fieldtype": "Float",
+   "label": "T\u1ed5ng \u0111i\u1ec3m",
+   "precision": "2"
+  },
+  {
+   "fieldname": "column_break_iyjk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tong_diem_co_so_bang_nhan_thuc_so_va_the_che_so",
+   "fieldtype": "Float",
+   "label": "T\u1ed5ng \u0111i\u1ec3m c\u01a1 s\u1edf",
+   "precision": "2"
+  },
+  {
+   "fieldname": "tab_3_tab",
+   "fieldtype": "Tab Break",
+   "label": "H\u1ea1 t\u1ea7ng s\u1ed1 v\u00e0 an ninh m\u1ea1ng"
+  },
+  {
+   "fieldname": "bang_ha_tang_va_an_ninh_mang",
+   "fieldtype": "Table",
+   "options": "Digital Economy Index Set Table"
+  },
+  {
+   "fieldname": "section_break_bcvk",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "tong_diem_ha_tang_va_an_ninh_mang",
+   "fieldtype": "Float",
+   "label": "T\u1ed5ng \u0111i\u1ec3m",
+   "precision": "2"
+  },
+  {
+   "fieldname": "column_break_dbaf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tong_diem_co_so_ha_tang_va_an_ninh_mang",
+   "fieldtype": "Float",
+   "label": "T\u1ed5ng \u0111i\u1ec3m c\u01a1 s\u1edf",
+   "precision": "2"
+  },
+  {
+   "fieldname": "tab_4_tab",
+   "fieldtype": "Tab Break",
+   "label": "Nh\u00e2n l\u1ef1c s\u1ed1"
+  },
+  {
+   "fieldname": "bang_nhan_luc_so",
+   "fieldtype": "Table",
+   "options": "Digital Economy Index Set Table"
+  },
+  {
+   "fieldname": "section_break_rwoz",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "tong_diem_nhan_luc_so",
+   "fieldtype": "Float",
+   "label": "T\u1ed5ng \u0111i\u1ec3m",
+   "precision": "2"
+  },
+  {
+   "fieldname": "column_break_vuue",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tong_diem_co_so_nhan_luc_so",
+   "fieldtype": "Float",
+   "label": "T\u1ed5ng \u0111i\u1ec3m c\u01a1 s\u1edf",
+   "precision": "2"
+  },
+  {
+   "fieldname": "tab_5_tab",
+   "fieldtype": "Tab Break",
+   "label": "Ho\u1ea1t \u0111\u1ed9ng Kinh t\u1ebf s\u1ed1"
+  },
+  {
+   "fieldname": "bang_hoat_dong_kinh_te_so",
+   "fieldtype": "Table",
+   "options": "Digital Economy Index Set Table"
+  },
+  {
+   "fieldname": "section_break_oxvz",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "tong_diem_hoat_dong_kinh_te_so",
+   "fieldtype": "Float",
+   "label": "T\u1ed5ng \u0111i\u1ec3m",
+   "precision": "2"
+  },
+  {
+   "fieldname": "column_break_rblw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tong_diem_co_so_hoat_dong_kinh_te_so",
+   "fieldtype": "Float",
+   "label": "T\u1ed5ng \u0111i\u1ec3m c\u01a1 s\u1edf",
+   "precision": "2"
+  },
+  {
+   "fieldname": "tab_6_tab",
+   "fieldtype": "Tab Break",
+   "label": "KTS Logistics"
+  },
+  {
+   "fieldname": "bang_kts_logistics",
+   "fieldtype": "Table",
+   "options": "Digital Economy Index Set Table"
+  },
+  {
+   "fieldname": "section_break_omvm",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "tong_diem_kts_logistics",
+   "fieldtype": "Float",
+   "label": "T\u1ed5ng \u0111i\u1ec3m",
+   "precision": "2"
+  },
+  {
+   "fieldname": "column_break_vzmp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tong_diem_co_so_kts_logistics",
+   "fieldtype": "Float",
+   "label": "T\u1ed5ng \u0111i\u1ec3m c\u01a1 s\u1edf",
+   "precision": "2"
+  },
+  {
+   "fieldname": "tab_7_tab",
+   "fieldtype": "Tab Break",
+   "label": "Doanh thu c\u00e1c ng\u00e0nh KTS"
+  },
+  {
+   "fieldname": "bang_doanh_thu_nganh_kts",
+   "fieldtype": "Table",
+   "options": "Digital Sector Revenue Table"
+  },
+  {
+   "fieldname": "tab_8_tab",
+   "fieldtype": "Tab Break",
+   "label": "Ng\u00e0nh m\u0169i nh\u1ecdn"
+  },
+  {
+   "fieldname": "bang_kts_nganh_mui_nhon",
+   "fieldtype": "Table",
+   "options": "Key Economic Sector Table"
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Title",
+   "unique": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "rut_gon",
+   "fieldtype": "Check",
+   "label": "Ch\u1ec9 s\u1ed1 r\u00fat g\u1ecdn"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-03-19 11:10:20.990314",
+ "modified_by": "Administrator",
+ "module": "Digital Economy",
+ "name": "Digital Economy Index Set",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

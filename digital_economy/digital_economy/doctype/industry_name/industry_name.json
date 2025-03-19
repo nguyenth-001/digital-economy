@@ -1,0 +1,85 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "field:title",
+ "creation": "2025-03-17 13:09:06.813578",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "nganh_kinh_te",
+  "c\u1ea5p_ng\u00e0nh",
+  "so_thu_tu",
+  "column_break_hjvz",
+  "ma_nganh_kinh_te",
+  "loai_kts",
+  "title"
+ ],
+ "fields": [
+  {
+   "fieldname": "nganh_kinh_te",
+   "fieldtype": "Data",
+   "label": "Ng\u00e0nh kinh t\u1ebf"
+  },
+  {
+   "fieldname": "c\u1ea5p_ng\u00e0nh",
+   "fieldtype": "Select",
+   "label": "C\u1ea5p ng\u00e0nh",
+   "options": "\nC\u1ea5p 1\nC\u1ea5p 2\nC\u1ea5p 3"
+  },
+  {
+   "fieldname": "column_break_hjvz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ma_nganh_kinh_te",
+   "fieldtype": "Data",
+   "label": "M\u00e3 ng\u00e0nh"
+  },
+  {
+   "fieldname": "loai_kts",
+   "fieldtype": "Select",
+   "label": "Lo\u1ea1i KTS",
+   "options": "\nKTS l\u00f5i\nKTS ng\u00e0nh kinh t\u1ebf ngo\u00e0i ICT"
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Title",
+   "unique": 1
+  },
+  {
+   "fieldname": "so_thu_tu",
+   "fieldtype": "Int",
+   "label": "S\u1ed1 th\u1ee9 t\u1ef1"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-03-18 14:22:52.949823",
+ "modified_by": "Administrator",
+ "module": "Digital Economy",
+ "name": "Industry Name",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "so_thu_tu",
+ "sort_order": "ASC",
+ "states": [],
+ "title_field": "title"
+}

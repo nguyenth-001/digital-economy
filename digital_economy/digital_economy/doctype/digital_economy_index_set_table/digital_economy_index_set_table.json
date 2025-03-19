@@ -1,0 +1,173 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-03-17 11:30:26.929410",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "ten_chi_so",
+  "muc_tieu_tham_chieu",
+  "co_so_tham_chieu",
+  "nguon_du_lieu",
+  "gia_tri_tham_chieu",
+  "diem_co_so",
+  "diem_chuan_hoa",
+  "column_break_vjuo",
+  "so_thu_tu",
+  "b\u1ed9_ch\u1ec9_s\u1ed1",
+  "cach_tinh_diem",
+  "section_break_icfa",
+  "chi_so_thanh_phan_a",
+  "chi_so_thanh_phan_b",
+  "column_break_vayz",
+  "nguon_du_lieu_chi_so_thanh_phan_a",
+  "nguon_du_lieu_chi_so_thanh_phan_b",
+  "column_break_sflk",
+  "gia_tri_thanh_phan_a",
+  "gia_tri_thanh_phan_b"
+ ],
+ "fields": [
+  {
+   "bold": 1,
+   "columns": 4,
+   "fieldname": "ten_chi_so",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "T\u00ean ch\u1ec9 s\u1ed1",
+   "options": "Index Name"
+  },
+  {
+   "columns": 1,
+   "fieldname": "muc_tieu_tham_chieu",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "M\u1ee5c ti\u00eau tham chi\u1ebfu",
+   "precision": "2"
+  },
+  {
+   "fieldname": "co_so_tham_chieu",
+   "fieldtype": "Data",
+   "label": "C\u01a1 s\u1edf tham chi\u1ebfu"
+  },
+  {
+   "fetch_from": "ten_chi_so.nguon_du_lieu",
+   "fieldname": "nguon_du_lieu",
+   "fieldtype": "Link",
+   "label": "Ngu\u1ed3n d\u1eef li\u1ec7u",
+   "options": "Data Source"
+  },
+  {
+   "columns": 1,
+   "fieldname": "gia_tri_tham_chieu",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Gi\u00e1 tr\u1ecb tham chi\u1ebfu",
+   "precision": "2"
+  },
+  {
+   "columns": 1,
+   "fetch_from": "ten_chi_so.diem_co_so",
+   "fieldname": "diem_co_so",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "\u0110i\u1ec3m c\u01a1 s\u1edf",
+   "precision": "2"
+  },
+  {
+   "columns": 1,
+   "fieldname": "diem_chuan_hoa",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "\u0110i\u1ec3m chu\u1ea9n h\u00f3a",
+   "precision": "2"
+  },
+  {
+   "fetch_from": "ten_chi_so.so_thu_tu",
+   "fieldname": "so_thu_tu",
+   "fieldtype": "Int",
+   "label": "S\u1ed1 th\u1ee9 t\u1ef1"
+  },
+  {
+   "fetch_from": "ten_chi_so.bo_chi_so",
+   "fieldname": "b\u1ed9_ch\u1ec9_s\u1ed1",
+   "fieldtype": "Select",
+   "label": "B\u1ed9 ch\u1ec9 s\u1ed1",
+   "options": "\nNh\u1eadn th\u1ee9c s\u1ed1 v\u00e0 th\u1ec3 ch\u1ebf s\u1ed1\nH\u1ea1 t\u1ea7ng s\u1ed1 v\u00e0 an ninh m\u1ea1ng\nNh\u00e2n l\u1ef1c s\u1ed1\nHo\u1ea1t \u0111\u1ed9ng Kinh t\u1ebf s\u1ed1\nKinh t\u1ebf s\u1ed1 Logistics\nDoanh thu c\u00e1c ng\u00e0nh KTS"
+  },
+  {
+   "fetch_from": "ten_chi_so.cach_tinh_diem",
+   "fieldname": "cach_tinh_diem",
+   "fieldtype": "Small Text",
+   "label": "C\u00e1ch x\u00e1c \u0111\u1ecbnh v\u00e0 t\u00ednh \u0111i\u1ec3m"
+  },
+  {
+   "fetch_from": "ten_chi_so.chi_so_thanh_phan_a",
+   "fieldname": "chi_so_thanh_phan_a",
+   "fieldtype": "Link",
+   "label": "Ch\u1ec9 s\u1ed1 th\u00e0nh ph\u1ea7n A",
+   "options": "Sub-Index Name"
+  },
+  {
+   "fetch_from": "ten_chi_so.chi_so_thanh_phan_b",
+   "fieldname": "chi_so_thanh_phan_b",
+   "fieldtype": "Link",
+   "label": "Ch\u1ec9 s\u1ed1 th\u00e0nh ph\u1ea7n B",
+   "options": "Sub-Index Name"
+  },
+  {
+   "fetch_from": "ten_chi_so.nguon_du_lieu_chi_so_thanh_phan_a",
+   "fieldname": "nguon_du_lieu_chi_so_thanh_phan_a",
+   "fieldtype": "Link",
+   "label": "Ngu\u1ed3n d\u1eef li\u1ec7u ch\u1ec9 s\u1ed1 th\u00e0nh ph\u1ea7n A",
+   "options": "Data Source"
+  },
+  {
+   "fetch_from": "ten_chi_so.nguon_du_lieu_chi_so_thanh_phan_b",
+   "fieldname": "nguon_du_lieu_chi_so_thanh_phan_b",
+   "fieldtype": "Link",
+   "label": "Ngu\u1ed3n d\u1eef li\u1ec7u ch\u1ec9 s\u1ed1 th\u00e0nh ph\u1ea7n B",
+   "options": "Data Source"
+  },
+  {
+   "fieldname": "column_break_vjuo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_icfa",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_vayz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_sflk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "gia_tri_thanh_phan_a",
+   "fieldtype": "Float",
+   "label": "Gi\u00e1 tr\u1ecb tham chi\u1ebfu",
+   "precision": "2"
+  },
+  {
+   "fieldname": "gia_tri_thanh_phan_b",
+   "fieldtype": "Float",
+   "label": "Gi\u00e1 tr\u1ecb tham chi\u1ebfu",
+   "precision": "2"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-03-19 10:39:39.874480",
+ "modified_by": "Administrator",
+ "module": "Digital Economy",
+ "name": "Digital Economy Index Set Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

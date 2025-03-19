@@ -1,0 +1,54 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "field:ten_chi_so_thanh_phan",
+ "creation": "2025-03-17 10:53:02.219059",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "ten_chi_so_thanh_phan",
+  "nguon_du_lieu"
+ ],
+ "fields": [
+  {
+   "fieldname": "ten_chi_so_thanh_phan",
+   "fieldtype": "Data",
+   "label": "T\u00ean ch\u1ec9 s\u1ed1 th\u00e0nh ph\u1ea7n",
+   "unique": 1
+  },
+  {
+   "fieldname": "nguon_du_lieu",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Ngu\u1ed3n d\u1eef li\u1ec7u",
+   "options": "Data Source"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-03-17 11:02:18.567157",
+ "modified_by": "Administrator",
+ "module": "Digital Economy",
+ "name": "Sub-Index Name",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,42 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-03-18 15:05:59.260917",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "nganh_kinh_te",
+  "ty_le_chi_tieu_ict_tieu_dung_trung_gian"
+ ],
+ "fields": [
+  {
+   "fieldname": "nganh_kinh_te",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Ng\u00e0nh kinh t\u1ebf",
+   "options": "Industry Name",
+   "read_only": 1
+  },
+  {
+   "bold": 1,
+   "fieldname": "ty_le_chi_tieu_ict_tieu_dung_trung_gian",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "T\u1ef7 l\u1ec7 chi ti\u00eau ICT/Ti\u00eau d\u00f9ng trung gian",
+   "precision": "2"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-03-18 15:07:14.116480",
+ "modified_by": "Administrator",
+ "module": "Digital Economy",
+ "name": "ICT Expenditure to Intermediate Consumption Ratio",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

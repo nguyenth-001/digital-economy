@@ -1,0 +1,131 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "field:ten_chi_so",
+ "creation": "2025-03-17 11:09:39.179873",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "ten_chi_so",
+  "bo_chi_so",
+  "nguon_du_lieu",
+  "cach_tinh_diem",
+  "column_break_iuju",
+  "so_thu_tu",
+  "diem_co_so",
+  "rut_gon",
+  "section_break_wyqs",
+  "chi_so_thanh_phan_a",
+  "nguon_du_lieu_chi_so_thanh_phan_a",
+  "column_break_thsj",
+  "chi_so_thanh_phan_b",
+  "nguon_du_lieu_chi_so_thanh_phan_b"
+ ],
+ "fields": [
+  {
+   "fieldname": "ten_chi_so",
+   "fieldtype": "Data",
+   "label": "T\u00ean ch\u1ec9 s\u1ed1",
+   "unique": 1
+  },
+  {
+   "fieldname": "bo_chi_so",
+   "fieldtype": "Select",
+   "in_standard_filter": 1,
+   "label": "B\u1ed9 ch\u1ec9 s\u1ed1",
+   "options": "\nNh\u1eadn th\u1ee9c s\u1ed1 v\u00e0 th\u1ec3 ch\u1ebf s\u1ed1\nH\u1ea1 t\u1ea7ng s\u1ed1 v\u00e0 an ninh m\u1ea1ng\nNh\u00e2n l\u1ef1c s\u1ed1\nHo\u1ea1t \u0111\u1ed9ng Kinh t\u1ebf s\u1ed1\nKinh t\u1ebf s\u1ed1 Logistics\nDoanh thu c\u00e1c ng\u00e0nh KTS"
+  },
+  {
+   "fieldname": "nguon_du_lieu",
+   "fieldtype": "Link",
+   "label": "Ngu\u1ed3n d\u1eef li\u1ec7u",
+   "options": "Data Source"
+  },
+  {
+   "fieldname": "column_break_iuju",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "so_thu_tu",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "S\u1ed1 th\u1ee9 t\u1ef1"
+  },
+  {
+   "fieldname": "diem_co_so",
+   "fieldtype": "Float",
+   "label": "\u0110i\u1ec3m c\u01a1 s\u1edf",
+   "precision": "2"
+  },
+  {
+   "fieldname": "cach_tinh_diem",
+   "fieldtype": "Small Text",
+   "label": "C\u00e1ch x\u00e1c \u0111\u1ecbnh v\u00e0 t\u00ednh \u0111i\u1ec1m"
+  },
+  {
+   "fieldname": "section_break_wyqs",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "chi_so_thanh_phan_a",
+   "fieldtype": "Link",
+   "label": "Ch\u1ec9 s\u1ed1 th\u00e0nh ph\u1ea7n A",
+   "options": "Sub-Index Name"
+  },
+  {
+   "fieldname": "nguon_du_lieu_chi_so_thanh_phan_a",
+   "fieldtype": "Link",
+   "label": "Ngu\u1ed3n d\u1eef li\u1ec7u ch\u1ec9 s\u1ed1 th\u00e0nh ph\u1ea7n A",
+   "options": "Data Source"
+  },
+  {
+   "fieldname": "column_break_thsj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "chi_so_thanh_phan_b",
+   "fieldtype": "Link",
+   "label": "Ch\u1ec9 s\u1ed1 th\u00e0nh ph\u1ea7n B",
+   "options": "Sub-Index Name"
+  },
+  {
+   "fieldname": "nguon_du_lieu_chi_so_thanh_phan_b",
+   "fieldtype": "Link",
+   "label": "Ngu\u1ed3n d\u1eef li\u1ec7u ch\u1ec9 s\u1ed1 th\u00e0nh ph\u1ea7n B",
+   "options": "Data Source"
+  },
+  {
+   "default": "0",
+   "fieldname": "rut_gon",
+   "fieldtype": "Check",
+   "in_standard_filter": 1,
+   "label": "Ch\u1ec9 s\u1ed1 r\u00fat g\u1ecdn"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-03-19 09:19:41.487440",
+ "modified_by": "Administrator",
+ "module": "Digital Economy",
+ "name": "Index Name",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "so_thu_tu",
+ "sort_order": "ASC",
+ "states": []
+}

@@ -1,0 +1,51 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "prompt",
+ "creation": "2025-03-18 15:08:08.202453",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "he_so_chuyen_doi",
+  "ty_le_chi_tieu_ict_tieu_dung_trung_gian_table"
+ ],
+ "fields": [
+  {
+   "fieldname": "he_so_chuyen_doi",
+   "fieldtype": "Float",
+   "label": "H\u1ec7 s\u1ed1 chuy\u1ec3n \u0111\u1ed5i",
+   "precision": "9"
+  },
+  {
+   "fieldname": "ty_le_chi_tieu_ict_tieu_dung_trung_gian_table",
+   "fieldtype": "Table",
+   "options": "ICT Expenditure to Intermediate Consumption Ratio"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-03-18 15:53:31.231244",
+ "modified_by": "Administrator",
+ "module": "Digital Economy",
+ "name": "Conversion Factor",
+ "naming_rule": "Set by user",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
