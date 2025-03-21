@@ -24,6 +24,8 @@ app_license = "mit"
 # Includes in <head>
 # ------------------
 
+fixtures = [{"doctype": "Client Script", "filters": [["module" , "in" , ("Digital Economy" )]]}]
+
 # include js, css files in header of desk.html
 # app_include_css = "/assets/digital_economy/css/digital_economy.css"
 # app_include_js = "/assets/digital_economy/js/digital_economy.js"
